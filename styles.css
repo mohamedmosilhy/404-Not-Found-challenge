@@ -1,0 +1,138 @@
+body {
+  height: 897px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 40px 0 0 70px;
+}
+
+header .logo {
+  color: #333;
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+}
+
+.container {
+  margin-left: 77px;
+  margin-right: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  body {
+    height: auto;
+  }
+  .container {
+    margin: 64px 20px 100px 20px;
+    flex-direction: column;
+  }
+
+  header {
+    margin: 20px;
+  }
+
+  .container .text h1 {
+    font-size: 48px;
+  }
+}
+
+.container .image {
+  max-width: 600px;
+}
+
+.container .text {
+  max-width: 600px;
+}
+
+.container .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container .text h1 {
+  max-width: 586px;
+  color: var(--Gray-1, #333);
+  font-family: Space Mono;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.24px;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 1200px) {
+  .container .text h1 {
+    font-size: 48px;
+  }
+}
+
+.container .text p {
+  max-width: 381px;
+  color: var(--Gray-2, #4f4f4f);
+  font-family: Space Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 1200px) {
+  .container .text p {
+    font-size: 18px;
+  }
+}
+
+.container .text button {
+  background: var(--Gray-1, #333);
+  width: 216px;
+  height: 68px;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.49px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer {
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+footer span {
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
